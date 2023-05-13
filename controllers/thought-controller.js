@@ -38,8 +38,7 @@ const thoughtController = {
   },
 
   // create Thought
-  // push the created thought's _id to the associated user's thoughts array field
-  createThought({ params, body }, res) {
+   createThought({ params, body }, res) {
     Thought.create(body)
       .then(({ _id }) => {
         return User.findOneAndUpdate(
@@ -87,7 +86,7 @@ const thoughtController = {
         // remove thought id from user's `thoughts` field
         return User.findOneAndUpdate(
           { thoughts: params.id },
-          { $pull: { thoughts: params.id } }, //$pull removes from an existing values that match a specified condition.
+          { $pull: { thoughts: params.id } }, 
           { new: true }
         );
       })
