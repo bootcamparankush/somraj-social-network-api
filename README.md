@@ -29,7 +29,7 @@ Screen Shot #1 :
 Screen Shot #2 :
 ![image](https://github.com/bootcamparankush/somraj-social-network-api/assets/120338398/d6595f18-90b2-45cc-a95d-3be7f54832fb)
 
-![Video Link](https://youtu.be/txdrN13AM0I)
+[!Video Link](https://youtu.be/txdrN13AM0I)
 
 
 ## License
