@@ -22,9 +22,12 @@ It's an API for a social network web application where users will be able to sha
 - Mongoose
 
 #### Insomnia Screenshot and Video
+Screen Shot #1 : 
+![image](https://github.com/bootcamparankush/somraj-social-network-api/assets/120338398/443065d8-4927-4ead-bef3-7f3cdee48edc)
 
-Screen Shot:
 
+Screen Shot #2 :
+![image](https://github.com/bootcamparankush/somraj-social-network-api/assets/120338398/d6595f18-90b2-45cc-a95d-3be7f54832fb)
 
 ## License
 
