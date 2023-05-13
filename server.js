@@ -10,8 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 
 db.once("open", () => {
-    app.listen(PORT, () => {
-        // console.log(`API server running on port ${PORT}!`);
-        console.log(`App listening at http://localhost:${PORT}');
-    });
+  app.listen(PORT, () => {
+    console.log(`API server running on port ${PORT}!`);
+  });
 });

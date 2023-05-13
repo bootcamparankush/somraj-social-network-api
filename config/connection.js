@@ -1,14 +1,10 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost:27017/somraj-social-network",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
-);
+// Wrap Mongoose around local connection to MongoDB
+mongoose.connect('mongodb://127.0.0.1:27017/somraj-social-network', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
-// Use this to log mongo queries being executed!
-mongoose.set("debug", true);
-
+// Export connection
 module.exports = mongoose.connection;

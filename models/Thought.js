@@ -23,9 +23,9 @@ const ReactionSchema = new Schema(
 
     createdAt: {
       type: Date,
-      // Set default value to the current timestamp
+      // Set default to the current timestamp
       default: Date.now,
-      // Use a getter method to format the timestamp on query
+      // Use a get method
       get: (timestamp) => dateFormat(timestamp),
     },
   },
@@ -49,7 +49,7 @@ const ThoughtSchema = new Schema(
     createdAt: {
       type: Date,
       default: Date.now,
-      // Use a getter method to format the timestamp on query
+      // Use a get method to format timestamp
       get: (timestamp) => dateFormat(timestamp),
     },
 
@@ -58,7 +58,7 @@ const ThoughtSchema = new Schema(
       required: true,
     },
 
-    // array of nested documents created with the reactionSchema
+    // array created with the reactionschema
     reactions: [ReactionSchema],
   },
   {
